@@ -1,0 +1,157 @@
+@import "fonts.css";
+
+* {
+    font-family: 'Roboto',sans-serif;
+}
+
+html {
+  font-size:15px;
+  line-height: 1.2;
+  font-family: 'Roboto',sans-serif;
+  color: #282d30;
+
+}
+h1,h2,h3,h4,h5,h6 {  font-family: 'Roboto',sans-serif;}
+h2 {font-size:2.8rem;}
+
+h3 {font-size:1.33333rem;}
+
+table tr td span {font-size:0.86em;}
+
+.table-cars .del {
+  font-size: 0.93333em;
+}
+
+.logo {margin:0;}
+
+.pagetitle {text-align: center;margin-top:0;margin-bottom: 50px;}
+
+.header {
+  background: #282d30;
+  height: 100px;
+  margin-bottom: 65px;
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right{
+  text-align: right;
+}
+
+
+.colors {
+  display: inline-block;
+}
+
+.colors  {margin:0;padding:0;}
+.colors li{
+  display: inline-block;
+  border-radius:100%;
+  margin-right: 13px;
+  list-style: none;
+  padding:0;
+  line-height: 0.7;
+  vertical-align: middle;
+}
+.colors li.active {border:3px solid #c4092f;}
+
+.colors li a{display: inline-block;width: 20px;height: 20px;line-height: 1;}
+
+.color-bg-white {background: #fff;border:1px solid #f4f4f4;}
+.color-bg-black {background: #000;}
+.color-bg-grey {background: #cbcbcc;}
+.color-bg-red {background: #d74345;}
+.color-bg-green {background: #88c504;}
+
+
+ main{
+  min-height: 800px;
+  font-size: 15px;
+}
+
+.footer {
+  padding-top: 38px;
+  height: 100px;
+  background: #282d30;
+  color:#ffffff;
+  text-align: center;
+  line-height: 1;
+}
+
+.form-group {margin-bottom: 29px;}
+
+.form-group.input {
+  border-bottom:1px solid #e8e8e8;
+}
+
+
+.form-control {
+  border:1px solid #e8e8e8;
+  border-radius: 0;
+  box-shadow: none;
+  height: 40px;
+}
+
+.add-car-form .submit {
+  background: #c4092f;
+  border-radius: 4px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.06em;
+}
+
+.container {max-width: 958px;}
+
+.subtitle {
+  text-transform: uppercase;
+  border-left:3px solid #b2b8ba;
+  padding-left: 15px;
+  margin-bottom: 25px;
+}
+
+
+.table>thead>tr>th {
+  background: #c4092f;
+  color: #fff;
+  padding-top: 15px;
+  padding-bottom: 13px;
+  font-weight:400;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.table {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.table>tbody>tr>td {
+  background: #F5F6F6;
+  padding:15px;
+}
+
+.car-title {
+  font-weight: 300;
+  color: #323232;
+}
+
+.car-status {
+  text-transform: capitalize;
+}
+
+.car-title .car-description {color:#8b9497;}
+
+
+.table-cars {
+  font-weight: 300;
+}
+.car-color {text-align:center;}
+.car-color span {display: inline-block;width: 20px;height: 20px;border-radius: 100%;}

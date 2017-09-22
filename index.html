@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Captain Jack</title>
+
+    <meta charset="utf-8" />
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css" />
+    <!--[if lt IE 9]>
+      <script>
+      (function(){
+        var ef = function(){};
+        window.console = window.console || {log:ef,warn:ef,error:ef,dir:ef};
+      }());
+      </script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/3.4.0/es5-shim.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/3.4.0/es5-sham.js"></script>
+      <![endif]-->
+  </head>
+  <body>
+    <header class="header text-center">
+        <h1 class="logo"><a href="#" ><img src="assets/images/logo.png" alt="Captain Jack"/> </a> </h1>
+    </header>
+    <main>
+        <div class="container">
+            <h2 class="pagetitle">¡Ay caramba!</h2>
+            <form name="add-car-form" class="add-car-form" method="post" action="/">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group input">
+                      <input type="text" class="form-control" name="title" value="" placeholder="Название" />
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group input">
+                    <input type="text" class="form-control" name="year" value="" placeholder="Год" />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group input">
+                    <input type="text" class="form-control" name="price" value="" placeholder="Цена" />
+                  </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="description" value="" placeholder="Описание"  />
+                  </div>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                  <div class="form-group">
+                    <p>Цвет</p>
+                    <ul class="colors">
+                      <li class="color-bg-white"><a href="#"></a></li>
+                      <li class="color-bg-black"><a href="#"></a></li>
+                      <li class="color-bg-grey active"><a href="#"></a></li>
+                      <li class="color-bg-red"><a href="#"></a></li>
+                      <li class="color-bg-green"><a href="#"></a></li>
+                    </ul>
+                  </div>
+
+              </div>
+              <div class="col-md-4">
+                  <div class="form-group">
+                      <select name="status">
+                          <option value="1">В наличии</option>
+                          <option value="2">Ожидается</option>
+                          <option value="0">Нет в наличии</option>
+                      </select>
+                  </div>
+
+              </div>
+              <div class="col-md-4">
+                  <button type="submit" class="submit form-control" name="submit">Отправить ></button>
+              </div>
+            </div><!-- /row -->
+          </form> <!-- / add-car-form -->
+          <h3 class="subtitle">Автомобили в наличии </h3>
+          <table class="table table-cars">
+              <thead>
+                  <tr>
+                    <th>Название</th>
+                    <th>Год</th>
+                    <th>Цвет</th>
+                    <th>Статус</th>
+                    <th>Цена</th>
+                    <th>&nbsp;</th>
+                  </tr>
+              </thead>
+              <tbody>
+                <tr id="car-1">
+                  <td id="car-1-title" class="car-title">1.6 MT Ambiente 85 л.с. МКПП <br/>
+                  <span id="car-1-description" class="car-description">+ доп. опция Радио-навигационная система Amundasen 2DIN, CD, MP3</span> </td>
+                  <td id="car-1-year" class="car-year">2012</td>
+                  <td id="car-1-color" class="car-color"><span class="color-bg-black"></span> </td>
+                  <td id="car-1-status" class="car-status">ожидается</td>
+                  <td id="car-1-price" class="car-price">1 189 900 руб.</td>
+                  <td id="car-1-actions" class="car-actions"><a href="#" class="del">Удалить</a></td>
+                </tr>
+                <tr id="car-2">
+                  <td id="car-2-title" class="car-title">1.6 MT Ambiente 85 л.с. МКПП <br/>
+                  <span id="car-2-description" class="car-description">+ доп. опция Радио-навигационная система Amundasen 2DIN, CD, MP3</span> </td>
+                  <td id="car-2-year" class="car-year">2012</td>
+                  <td id="car-2-color" class="car-color"><span class="color-bg-black"></span> </td>
+                  <td id="car-2-status" class="car-status">ожидается</td>
+                  <td id="car-2-price" class="car-price">1 189 900 руб.</td>
+                  <td id="car-2-actions" class="car-actions"><a href="#" class="del">Удалить</a></td>
+                </tr>
+
+              </tbody>
+          </table>
+        </div><!-- /container -->
+    </main>
+
+    <footer class="footer">
+        <div class="copywrite">&copy; 2015-2080 CAPTAIN JACK<br/> И бутылка рома </div>
+
+    </footer>
+
+
+  </body>
+
+</html>
